@@ -15,9 +15,9 @@ This action run [eb cli](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/
 ## Example usage
 
 ```YAML
-uses: hmanzur/actions-aws-eb@v1.0.0
+uses: finfo/actions-aws-eb@<commit SHA hash>
 with:
-  command: 'deploy ${{ secrets.ENVIRONMENT_NAME }}'
+  command: 'eb deploy ${{ secrets.ENVIRONMENT_NAME }}'
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

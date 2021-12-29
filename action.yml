@@ -11,9 +11,9 @@ branding:
   
 inputs:
   command:  # id of input
-    description: 'eb <command>'
+    description: '<command>'
     required: true
-    default: 'deploy'
+    default: 'eb deploy'
 
 runs:
   using: 'docker'
